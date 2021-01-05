@@ -1,0 +1,168 @@
+/*-- Le menu --*/
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+a{
+    color: #FFFCE1;
+    margin-top: auto;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+}
+  
+.topnav a{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.cam{
+    width:70px;
+}
+
+/*-- Le corps de la page --*/
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #011f29;
+    color: #FFFCE1;
+}
+.filmdumoment{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+hr{/*--Barre horizontale--*/
+    background-color: #FFFCE1;
+    size: 3px;
+    width: 100%;
+}
+.toutlesfilms{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/*-- Section ajouter et modifier un film --*/
+.grid-container{
+    display: grid;
+    grid-gap : 50px;
+    grid-column-start: 1;
+    grid-column-end : 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.h1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.h2{
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.grid-container2{
+    display: grid;
+    grid-gap : 50px;
+    grid-column-start: 1;
+    grid-column-end : 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.h3{
+    grid-column: 1;
+    grid-row: 1;
+}
+.h4{
+    grid-column: 2;
+    grid-row: 1;
+}
+.h5{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/*-- Le carousel --*/
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.carousel{
+    margin-top: 40px;
+}
+
+img{
+    width: 450px;
+}
+
+/*-- Les miniatures de tous les films --*/
+.grid-container3{
+    display: grid;
+    grid-gap : 50px;
+    grid-column-start: 1;
+    grid-column-end : 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.f1{
+    grid-column: 1;
+    grid-row: 1;
+    width: 150px;
+}
+.f2{
+    grid-column: 2;
+    grid-row: 1;
+    width: 150px;
+}
+.f3{
+    grid-column: 3;
+    grid-row: 1;
+    width: 150px;
+}
+
+.f4{
+    grid-column: 4;
+    grid-row: 1;
+    width: 150px;
+}
+.f5{
+    grid-column: 5;
+    grid-row: 1;
+    width: 150px;
+}
+.f6{
+    grid-column: 6;
+    grid-row: 1;
+    width: 150px;
+}
+.f7{
+    grid-column: 7;
+    grid-row: 1;
+    width: 150px;
+}
+.f8{
+    grid-column: 8;
+    grid-row: 1;
+    width: 150px;
+}
