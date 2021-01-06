@@ -29,6 +29,34 @@
 </head>
 
 <body>
+    
+    <form  method="post">
+
+
+   <p> Titre : </p> <input type="text" name="titre" >
+   <p> Synopsis : </p> <input type="text" name="synopsis" >
+   <p> Genre : </p> <input type="text" name="genre" >
+   <p> Realisateur : </p> <input type="text" name="realisateur" >
+   <p> Acteur : </p> <input type="text" name="acteur" >
+
+   <input type="submit">
+
+
+</form>
+
+</body>
+</html>
+
+<?php
+if (isset($_POST['titre']) && isset($_POST['synopsis']) &&  isset($_POST['genre']) && isset($_POST['realisateur']) &&isset($_POST['acteur']) ) {
+
+$bdd = new PDO('mysql:host=localhost;dbname=film;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $reponse = $bdd->query('SELECT * FROM info');
+
+    $requete = 'INSERT INTO info VALUES(NULL,"'. $_POST['titre'] . '","'. $_POST['synopsis'] . '" ,"'. $_POST['genre'] . '" ,"'. $_POST['realisateur'] . '" ,"'. $_POST['acteur'] . '")';
+$resultat = $bdd->query($requete);
+}
+?>
 
     <!--Section "ajouter et modifier un film".-->
     <div class="grid-container">
